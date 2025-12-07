@@ -16,9 +16,6 @@ bin/
 # Logs
 *.log
 
-# Go
-go.sum
-
 # Temp
 scripts/temp/
 Documents/temp/
