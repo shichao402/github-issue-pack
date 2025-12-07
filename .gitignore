@@ -1,20 +1,24 @@
-# 构建产物
-dist/
-*.tar.gz
-
-# 临时文件
-*.tmp
-*.log
+# OS
 .DS_Store
+Thumbs.db
 
 # IDE
 .idea/
 .vscode/
 *.swp
+*.swo
 
-# 环境变量
-.env
-.env.local
+# Build
+dist/
+*.tar.gz
+bin/
 
-# CursorToolset 本地缓存
-.cursortoolset/cache/
+# Logs
+*.log
+
+# Go
+go.sum
+
+# Temp
+scripts/temp/
+Documents/temp/

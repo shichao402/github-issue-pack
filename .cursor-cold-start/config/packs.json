@@ -1,15 +1,35 @@
 {
   "$schema": "功能包配置 - 运行 coldstart list packs 查看可用功能包",
   "cursortoolset": {
+    "config": {
+      "packageName": "github-issue-pack"
+    },
+    "enabled": true
+  },
+  "documentation": {
     "enabled": true
   },
   "github-actions": {
     "enabled": true
   },
-  "version-management": {
-    "enabled": true,
+  "logging": {
     "config": {
-      "sourceFile": "package.json"
-    }
+      "filePath": "logs/app.log",
+      "serviceClass": "LogService"
+    },
+    "enabled": false
+  },
+  "update-module": {
+    "config": {
+      "moduleName": "",
+      "modulePath": ""
+    },
+    "enabled": false
+  },
+  "version-management": {
+    "config": {
+      "sourceFile": "version.json"
+    },
+    "enabled": true
   }
 }

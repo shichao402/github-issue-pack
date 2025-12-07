@@ -6,11 +6,16 @@
 *.sh text eol=lf
 *.py text eol=lf
 
+# Go 源代码使用 LF
+*.go text eol=lf
+
 # 配置文件使用 LF
 *.json text eol=lf
 *.yaml text eol=lf
 *.yml text eol=lf
 *.toml text eol=lf
+*.mod text eol=lf
+*.sum text eol=lf
 
 # Markdown 文件使用 LF
 *.md text eol=lf
@@ -23,3 +28,4 @@
 *.gif binary
 *.ico binary
 *.pdf binary
+*.exe binary

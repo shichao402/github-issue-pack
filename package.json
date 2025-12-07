@@ -1,22 +1,30 @@
 {
-  "name": "github-issue",
-  "displayName": "GitHub Issue Pack",
-  "version": "0.1.0",
-  "description": "标准化的 GitHub Issue 创建与处理工具，支持项目间自动化协作",
   "author": "shichao402",
-  "license": "MIT",
+  "bin": {
+    "github-issue": "./bin/github-issue"
+  },
+  "cursortoolset": {
+    "minVersion": "1.0.0"
+  },
+  "description": "标准化的 GitHub Issue 创建与处理工具，支持项目间自动化协作。提供 Issue 打包/解包、状态管理、Gist 存储等功能。",
+  "displayName": "GitHub Issue Pack",
+  "dist": {
+    "sha256": "TODO: 发布时自动填写",
+    "tarball": "github-issue-pack-0.1.0.tar.gz"
+  },
   "keywords": [
     "github",
     "issue",
     "automation",
     "collaboration",
-    "gist"
+    "gist",
+    "cursortoolset"
   ],
+  "license": "MIT",
+  "name": "github-issue-pack",
   "repository": {
     "type": "git",
     "url": "https://github.com/shichao402/github-issue-pack.git"
   },
-  "cursortoolset": {
-    "minVersion": "1.7.0"
-  }
+  "version": "0.1.0"
 }
