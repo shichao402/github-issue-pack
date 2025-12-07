@@ -1,7 +1,7 @@
 {
   "name": "github-issue-pack",
   "displayName": "GitHub Issue Pack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "标准化的 GitHub Issue 创建与处理工具，支持项目间自动化协作。提供 Issue 打包/解包、状态管理、Gist 存储等功能。",
   "author": "shichao402",
   "license": "MIT",
@@ -19,24 +19,16 @@
     "cli"
   ],
   "bin": {
-    "github-issue": "./bin/github-issue"
+    "github-issue": {
+      "darwin-amd64": "bin/github-issue-darwin-amd64",
+      "darwin-arm64": "bin/github-issue-darwin-arm64",
+      "linux-amd64": "bin/github-issue-linux-amd64",
+      "linux-arm64": "bin/github-issue-linux-arm64",
+      "windows-amd64": "bin/github-issue-windows-amd64.exe"
+    }
   },
   "cursortoolset": {
-    "minVersion": "1.0.0",
-    "platforms": [
-      "darwin-amd64",
-      "darwin-arm64",
-      "linux-amd64",
-      "linux-arm64",
-      "windows-amd64"
-    ],
-    "binaries": {
-      "darwin-amd64": "./bin/github-issue-darwin-amd64",
-      "darwin-arm64": "./bin/github-issue-darwin-arm64",
-      "linux-amd64": "./bin/github-issue-linux-amd64",
-      "linux-arm64": "./bin/github-issue-linux-arm64",
-      "windows-amd64": "./bin/github-issue-windows-amd64.exe"
-    }
+    "minVersion": "1.0.0"
   },
   "dist": {
     "sha256": "TODO: 发布时自动填写",
