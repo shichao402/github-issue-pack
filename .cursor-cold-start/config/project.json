@@ -1,0 +1,6 @@
+{
+  "$schema": "项目基本信息配置",
+  "name": "github-issue-pack",
+  "description": "标准化的 GitHub Issue 创建与处理工具，支持项目间自动化协作",
+  "version": "0.1.0"
+}

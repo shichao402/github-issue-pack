@@ -1,0 +1,22 @@
+{
+  "name": "github-issue",
+  "displayName": "GitHub Issue Pack",
+  "version": "0.1.0",
+  "description": "标准化的 GitHub Issue 创建与处理工具，支持项目间自动化协作",
+  "author": "shichao402",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "issue",
+    "automation",
+    "collaboration",
+    "gist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shichao402/github-issue-pack.git"
+  },
+  "cursortoolset": {
+    "minVersion": "1.7.0"
+  }
+}
