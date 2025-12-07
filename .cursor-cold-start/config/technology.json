@@ -1,10 +1,12 @@
 {
   "$schema": "技术栈配置 - 运行 coldstart list 查看可用选项",
-  "framework": "",
   "language": "go",
+  "framework": "cobra",
   "platforms": [
     "macos",
     "linux",
     "windows"
-  ]
+  ],
+  "buildTool": "go build",
+  "packageManager": "go mod"
 }

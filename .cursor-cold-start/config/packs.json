@@ -1,35 +1,40 @@
 {
   "$schema": "功能包配置 - 运行 coldstart list packs 查看可用功能包",
   "cursortoolset": {
+    "enabled": true,
     "config": {
-      "packageName": "github-issue-pack"
-    },
-    "enabled": true
+      "packageName": "github-issue-pack",
+      "binaries": {
+        "github-issue": "./bin/github-issue"
+      },
+      "platforms": ["darwin-amd64", "darwin-arm64", "linux-amd64", "linux-arm64", "windows-amd64"]
+    }
   },
   "documentation": {
-    "enabled": true
+    "enabled": true,
+    "config": {
+      "docsDir": "Documents",
+      "userGuide": "Documents/user/quickstart.md",
+      "apiReference": "Documents/user/commands.md"
+    }
   },
   "github-actions": {
-    "enabled": true
+    "enabled": true,
+    "config": {
+      "releaseWorkflow": ".github/workflows/release.yml"
+    }
   },
   "logging": {
-    "config": {
-      "filePath": "logs/app.log",
-      "serviceClass": "LogService"
-    },
     "enabled": false
   },
   "update-module": {
-    "config": {
-      "moduleName": "",
-      "modulePath": ""
-    },
     "enabled": false
   },
   "version-management": {
+    "enabled": true,
     "config": {
-      "sourceFile": "version.json"
-    },
-    "enabled": true
+      "sourceFile": "version.json",
+      "syncTargets": ["package.json", "internal/cli/version.go"]
+    }
   }
 }
