@@ -172,8 +172,9 @@ github-issue update 123 --status pending --comment "需要更多信息"
 
 | 变量 | 说明 |
 |------|------|
-| `GITHUB_TOKEN` | GitHub Personal Access Token（必需） |
-| `GITHUB_ISSUE_DEFAULT_REPO` | 默认目标仓库（可选） |
+| `GITHUB_TOKEN` | GitHub Personal Access Token（可选，默认使用 gh CLI 认证） |
+
+> **注意**：`--repo` 参数是必需的，不支持默认仓库配置。这是有意为之的设计，遵循「显式优于隐式」原则，避免误操作将 Issue 提交到错误的仓库。
 
 ## Token 权限要求
 
